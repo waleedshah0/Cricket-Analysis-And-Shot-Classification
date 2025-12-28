@@ -1,0 +1,52 @@
+{"vector_id": 0, "pk": 1, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Shan Masood. Info: Left Handed Bat. Additional: Captain. Profile: https://www.sportskeeda.com/player/shan-masood"}
+{"vector_id": 1, "pk": 2, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Babar Azam. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/babar-azam"}
+{"vector_id": 2, "pk": 3, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Mohammad Rizwan. Info: Right Handed Bat. Additional: (wk). Profile: https://www.sportskeeda.com/player/mohammad-rizwan"}
+{"vector_id": 3, "pk": 4, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Kamran Ghulam. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/kamran-ghulam"}
+{"vector_id": 4, "pk": 5, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Hasan Ali. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/hasan-ali"}
+{"vector_id": 5, "pk": 6, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Imam ul Haq. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/imam-ul-haq"}
+{"vector_id": 6, "pk": 7, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Noman Ali. Info: Left Arm Bowl. Profile: https://www.sportskeeda.com/player/nauman-ali"}
+{"vector_id": 7, "pk": 8, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Agha Salman. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/agha-salman"}
+{"vector_id": 8, "pk": 9, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Saud Shakeel. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/saud-shakeel"}
+{"vector_id": 9, "pk": 10, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Asif Afridi. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/asif-afridi"}
+{"vector_id": 10, "pk": 11, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Abdullah Shafique. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/abdullah-shafique"}
+{"vector_id": 11, "pk": 12, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Aamer Jamal. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/aamer-jamal"}
+{"vector_id": 12, "pk": 13, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Abrar Ahmed. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/abrar-ahmed"}
+{"vector_id": 13, "pk": 14, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Sajid Khan. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/sajid-khan"}
+{"vector_id": 14, "pk": 15, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Shaheen Afridi. Info: Left Arm Bowl. Profile: https://www.sportskeeda.com/player/shaheen-afridi"}
+{"vector_id": 15, "pk": 16, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Rohail Nazir. Info: Right Handed Bat. Additional: (wk). Profile: https://www.sportskeeda.com/player/rohail-nazir"}
+{"vector_id": 16, "pk": 17, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Khurram Shahzad. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/khurram-shahzad"}
+{"vector_id": 17, "pk": 18, "table": "team_squad_players", "text": "Team: Pakistan (TEST). Player: Faisal Akram. Info: Bowl. Profile: https://www.sportskeeda.com/player/faisal-akram"}
+{"vector_id": 18, "pk": 19, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Mohammad Rizwan. Info: Right Handed Bat. Additional: (wk); Captain. Profile: https://www.sportskeeda.com/player/mohammad-rizwan"}
+{"vector_id": 19, "pk": 20, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Mohammad Nawaz. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/mohammad-nawaz"}
+{"vector_id": 20, "pk": 21, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Fakhar Zaman. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/fakhar-zaman"}
+{"vector_id": 21, "pk": 22, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Babar Azam. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/babar-azam"}
+{"vector_id": 22, "pk": 23, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Agha Salman. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/agha-salman"}
+{"vector_id": 23, "pk": 24, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Hussain Talat. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/hussain-talat"}
+{"vector_id": 24, "pk": 25, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Faheem Ashraf. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/faheem-ashraf"}
+{"vector_id": 25, "pk": 26, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Mohammad Wasim Jr. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/mohammad-wasim"}
+{"vector_id": 26, "pk": 27, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Abrar Ahmed. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/abrar-ahmed"}
+{"vector_id": 27, "pk": 28, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Haris Rauf. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/haris-rauf"}
+{"vector_id": 28, "pk": 29, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Shaheen Afridi. Info: Left Arm Bowl. Profile: https://www.sportskeeda.com/player/shaheen-afridi"}
+{"vector_id": 29, "pk": 30, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Saim Ayub. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/saim-ayub"}
+{"vector_id": 30, "pk": 31, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Naseem Shah. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/naseem-shah"}
+{"vector_id": 31, "pk": 32, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Faisal Akram. Info: Bowl. Profile: https://www.sportskeeda.com/player/faisal-akram"}
+{"vector_id": 32, "pk": 33, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Haseebullah Khan. Info: Bat. Additional: (wk). Profile: https://www.sportskeeda.com/player/haseebullah-khan"}
+{"vector_id": 33, "pk": 34, "table": "team_squad_players", "text": "Team: Pakistan (ODI). Player: Hasan Nawaz. Info: Bat. Profile: https://www.sportskeeda.com/player/hasan-nawaz"}
+{"vector_id": 34, "pk": 35, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Mohammad Nawaz. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/mohammad-nawaz"}
+{"vector_id": 35, "pk": 36, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Fakhar Zaman. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/fakhar-zaman"}
+{"vector_id": 36, "pk": 37, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Babar Azam. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/babar-azam"}
+{"vector_id": 37, "pk": 38, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Usman Tariq. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/usman-tariq"}
+{"vector_id": 38, "pk": 39, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Agha Salman. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/agha-salman"}
+{"vector_id": 39, "pk": 40, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Faheem Ashraf. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/faheem-ashraf"}
+{"vector_id": 40, "pk": 41, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Mohammad Wasim Jr. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/mohammad-wasim"}
+{"vector_id": 41, "pk": 42, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Abrar Ahmed. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/abrar-ahmed"}
+{"vector_id": 42, "pk": 43, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Sahibzada Farhan. Info: Right Handed Bat. Additional: (wk). Profile: https://www.sportskeeda.com/player/sahibzada-farhan"}
+{"vector_id": 43, "pk": 44, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Haris Rauf. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/haris-rauf"}
+{"vector_id": 44, "pk": 45, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Shaheen Afridi. Info: Left Arm Bowl. Profile: https://www.sportskeeda.com/player/shaheen-afridi"}
+{"vector_id": 45, "pk": 46, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Abdul Samad. Info: Right Handed Bat. Profile: https://www.sportskeeda.com/player/samad-abdul"}
+{"vector_id": 46, "pk": 47, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Saim Ayub. Info: Left Handed Bat. Profile: https://www.sportskeeda.com/player/saim-ayub"}
+{"vector_id": 47, "pk": 48, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Naseem Shah. Info: Right Arm Bowl. Profile: https://www.sportskeeda.com/player/naseem-shah"}
+{"vector_id": 48, "pk": 49, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Usman Khan. Info: Right Handed Bat. Additional: (wk). Profile: https://www.sportskeeda.com/player/usman-khan"}
+{"vector_id": 49, "pk": 50, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Salman Mirza. Info: Left Arm Bowl. Profile: https://www.sportskeeda.com/player/salman-mirza"}
+{"vector_id": 50, "pk": 51, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Sufiyan Muqeem. Info: Left Arm Bowl. Profile: https://www.sportskeeda.com/player/sufiyan-muqeem"}
+{"vector_id": 51, "pk": 52, "table": "team_squad_players", "text": "Team: Pakistan (T20I). Player: Hasan Nawaz. Info: Bat. Profile: https://www.sportskeeda.com/player/hasan-nawaz"}

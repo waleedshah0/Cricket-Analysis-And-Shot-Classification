@@ -1,0 +1,171 @@
+================================================================================
+                    GITHUB UPLOAD - COMPLETE GUIDE
+================================================================================
+
+PROJECT: Cricket AI Squad & Shot Classification System
+UPLOAD DESTINATION: GitHub
+
+================================================================================
+                              WHAT'S PREPARED
+================================================================================
+
+✅ .gitignore
+   - Excludes: venv, node_modules, model weights, .env files
+   - Only uploads essential source code and config files
+
+✅ GITHUB-README.md
+   - Comprehensive project documentation
+   - Features, architecture, setup instructions
+   - API endpoints, database schema
+   - Troubleshooting guide
+   - Rename to README.md on GitHub
+
+✅ GITHUB-UPLOAD-GUIDE.md
+   - Step-by-step detailed instructions
+   - Personal access token setup
+   - GitHub repository creation
+   - Future commit workflow
+
+✅ GITHUB-QUICK-START.md
+   - Copy-paste commands
+   - TL;DR version for quick setup
+   - Troubleshooting tips
+
+================================================================================
+                           QUICK 3-STEP SETUP
+================================================================================
+
+STEP 1: CONFIGURE GIT (Run in PowerShell)
+--------
+cd d:\cricket
+git config --global user.name "Your Name"
+git config --global user.email "your.email@gmail.com"
+
+STEP 2: CREATE GITHUB REPO & UPLOAD
+--------
+1. Go to: https://github.com/new
+2. Repository name: cricket-ai-squad
+3. Click "Create repository"
+4. Copy the URL shown (like: https://github.com/YOUR_USERNAME/cricket-ai-squad.git)
+
+STEP 3: PUSH YOUR CODE
+--------
+cd d:\cricket
+git init
+git add .
+git commit -m "Initial commit: Cricket AI Squad and Shot Classification System"
+git remote add origin https://github.com/YOUR_USERNAME/cricket-ai-squad.git
+git branch -M main
+git push -u origin main
+
+When prompted for password: Paste your GitHub Personal Access Token
+
+================================================================================
+                      GET PERSONAL ACCESS TOKEN
+================================================================================
+
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token" → "Generate new token (classic)"
+3. Name it: "Cricket AI Squad"
+4. Check these boxes:
+   ☑ repo (full control of private repositories)
+   ☑ workflow (GitHub Actions)
+5. Scroll down, click "Generate token"
+6. COPY THE TOKEN (you'll only see it once!)
+7. Keep it safe - use it as password when pushing
+
+================================================================================
+                           IMPORTANT NOTES
+================================================================================
+
+❌ DO NOT UPLOAD:
+   - model_weights.h5 (too large - 100MB+)
+   - node_modules/ (too large - reinstall with npm install)
+   - venv/ (virtual environment)
+   - .env files (security risk)
+   - Temporary files and logs
+
+✅ THESE ARE ALREADY EXCLUDED by .gitignore
+
+📝 AFTER UPLOAD:
+   1. Rename GITHUB-README.md to README.md on GitHub website
+      (Or use: git mv GITHUB-README.md README.md; git push)
+   2. Add description and website to repo settings
+   3. Add topics (optional): cricket, ai, deep-learning, shot-classification
+
+🚀 FUTURE UPDATES:
+   cd d:\cricket
+   git add .
+   git commit -m "Your changes description"
+   git push origin main
+
+================================================================================
+                             FILE STRUCTURE
+================================================================================
+
+Repository will contain:
+
+cricket-ai-squad/
+├── api.py                    (Video classification API)
+├── stadiums_api.py          (Stadium/Player API)
+├── requirements.txt         (Python dependencies)
+├── .gitignore              (Git ignore rules)
+├── README.md               (Main documentation)
+├── GITHUB-*.md             (Setup guides - optional to keep)
+│
+├── cricket-ai-squad-main/  (React frontend)
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   └── lib/
+│   ├── package.json
+│   └── vite.config.ts
+│
+└── faiss_indexes/          (Vector search indexes)
+
+Note: node_modules will be rebuilt from package.json
+      venv will be recreated from requirements.txt
+      model_weights.h5 needs to be added separately
+
+================================================================================
+                        GITHUB URL AFTER UPLOAD
+================================================================================
+
+Your project will be at:
+https://github.com/YOUR_USERNAME/cricket-ai-squad
+
+Repository settings: https://github.com/YOUR_USERNAME/cricket-ai-squad/settings
+
+================================================================================
+                          VERIFICATION CHECKLIST
+================================================================================
+
+After pushing to GitHub, verify:
+
+□ All source files are present
+□ README.md is visible on main page
+□ .gitignore is working (no venv, node_modules, or .env files)
+□ All Python scripts are visible (api.py, stadiums_api.py, etc.)
+□ Frontend code in cricket-ai-squad-main/ is visible
+□ No large binary files are shown (model_weights.h5 excluded)
+□ Database files not included
+
+================================================================================
+                        NEED HELP? CHECK:
+================================================================================
+
+Detailed Setup: Read GITHUB-UPLOAD-GUIDE.md
+Quick Commands: Read GITHUB-QUICK-START.md
+Troubleshooting: See GITHUB-UPLOAD-GUIDE.md section "Troubleshooting"
+
+================================================================================
+                           YOU'RE ALL SET! 🚀
+================================================================================
+
+All preparation is done. Now:
+
+1. Create repository on GitHub (https://github.com/new)
+2. Follow Step 3 in "QUICK 3-STEP SETUP" above
+3. Your project will be live on GitHub!
+
+Questions? Refer to the detailed guides provided.

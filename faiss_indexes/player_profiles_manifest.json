@@ -1,0 +1,10 @@
+{
+  "table": "player_profiles",
+  "count": 34,
+  "index_path": "faiss_indexes\\player_profiles.index",
+  "meta_path": "faiss_indexes\\player_profiles_meta.jsonl",
+  "model_name": "all-MiniLM-L6-v2",
+  "created_at": "2025-11-15 16:02:08",
+  "dimension": 384,
+  "metric": "cosine"
+}

@@ -1,0 +1,10 @@
+{
+  "table": "stadiums",
+  "count": 125,
+  "index_path": "faiss_indexes\\stadiums.index",
+  "meta_path": "faiss_indexes\\stadiums_meta.jsonl",
+  "model_name": "all-MiniLM-L6-v2",
+  "created_at": "2025-11-15 16:02:06",
+  "dimension": 384,
+  "metric": "cosine"
+}

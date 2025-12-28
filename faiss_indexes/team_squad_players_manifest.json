@@ -1,0 +1,10 @@
+{
+  "table": "team_squad_players",
+  "count": 52,
+  "index_path": "faiss_indexes\\team_squad_players.index",
+  "meta_path": "faiss_indexes\\team_squad_players_meta.jsonl",
+  "model_name": "all-MiniLM-L6-v2",
+  "created_at": "2025-11-15 16:02:01",
+  "dimension": 384,
+  "metric": "cosine"
+}

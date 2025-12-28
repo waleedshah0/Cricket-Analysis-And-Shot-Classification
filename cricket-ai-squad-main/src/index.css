@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Theme Cricket AI Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Dark backgrounds */
+    --background: 215 30% 6%;        /* #0A0F14 deep charcoal */
+    --foreground: 0 0% 90%;          /* #E5E5E5 light grey text */
+
+    /* Dark surface cards with glassmorphism */
+    --card: 215 20% 10%;             /* #111821 */
+    --card-foreground: 0 0% 90%;
+
+    --popover: 215 20% 10%;
+    --popover-foreground: 0 0% 90%;
+
+    /* Neon Green Primary */
+    --primary: 150 100% 60%;         /* #32FF8F neon green */
+    --primary-foreground: 215 30% 6%;
+
+    /* Electric Blue Secondary */
+    --secondary: 202 100% 62%;       /* #3BA9FF electric blue */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted dark tones */
+    --muted: 215 15% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Accent - matches primary neon */
+    --accent: 150 100% 60%;
+    --accent-foreground: 215 30% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Dark borders */
+    --border: 215 15% 20%;
+    --input: 215 15% 20%;
+    --ring: 150 100% 60%;            /* neon green ring */
+
+    --radius: 0.75rem;
+
+    /* Dark theme gradients with neon */
+    --gradient-hero: linear-gradient(135deg, hsl(215 30% 6%) 0%, hsl(215 25% 10%) 50%, hsl(215 30% 6%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(150 100% 60% / 0.05) 0%, hsl(202 100% 62% / 0.05) 100%);
+    --gradient-neon: linear-gradient(135deg, hsl(150 100% 60%) 0%, hsl(202 100% 62%) 100%);
+    
+    /* Glassmorphism dark */
+    --glass-bg: hsl(215 20% 10% / 0.7);
+    --glass-border: hsl(150 100% 60% / 0.2);
+    
+    /* Neon glow effects */
+    --glow-primary: 0 0 20px hsl(150 100% 60% / 0.5);
+    --glow-secondary: 0 0 20px hsl(202 100% 62% / 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-bold text-white;
+  }
+}
+
+/* Custom neon glow utilities */
+@layer utilities {
+  .glow-neon-primary {
+    box-shadow: 0 0 20px hsl(150 100% 60% / 0.5),
+                0 0 40px hsl(150 100% 60% / 0.3),
+                0 0 60px hsl(150 100% 60% / 0.2);
+  }
+  
+  .glow-neon-secondary {
+    box-shadow: 0 0 20px hsl(202 100% 62% / 0.5),
+                0 0 40px hsl(202 100% 62% / 0.3),
+                0 0 60px hsl(202 100% 62% / 0.2);
+  }
+
+  .text-glow-primary {
+    text-shadow: 0 0 10px hsl(150 100% 60% / 0.8),
+                 0 0 20px hsl(150 100% 60% / 0.5),
+                 0 0 30px hsl(150 100% 60% / 0.3);
+  }
+
+  .text-glow-secondary {
+    text-shadow: 0 0 10px hsl(202 100% 62% / 0.8),
+                 0 0 20px hsl(202 100% 62% / 0.5),
+                 0 0 30px hsl(202 100% 62% / 0.3);
+  }
+
+  .border-glow-primary {
+    border: 1px solid hsl(150 100% 60%);
+    box-shadow: 0 0 10px hsl(150 100% 60% / 0.5);
+  }
+
+  .border-glow-secondary {
+    border: 1px solid hsl(202 100% 62%);
+    box-shadow: 0 0 10px hsl(202 100% 62% / 0.5);
+  }
+
+  .glass-card {
+    background: hsl(215 20% 10% / 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(150 100% 60% / 0.2);
+  }
+}
