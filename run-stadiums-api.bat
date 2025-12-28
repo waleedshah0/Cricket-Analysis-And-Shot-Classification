@@ -1,0 +1,13 @@
+@echo off
+echo Starting Stadiums API Server...
+
+echo Activating virtual environment...
+call venv\Scripts\activate
+
+echo Installing required dependencies...
+pip install -r requirements.txt --use-deprecated=legacy-resolver
+
+echo Starting stadiums API server on port 8001...
+python stadiums_api.py
+
+pause
