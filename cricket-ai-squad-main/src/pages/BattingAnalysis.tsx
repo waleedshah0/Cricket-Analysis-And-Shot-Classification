@@ -12,7 +12,7 @@ interface AnalysisResult {
   shotsDetected: string[];
   shotTypeRecognition: string[];
   recommendations: string[];
-  top3Predictions?: Array<{shotType: string; confidence: number}>;
+  top3Predictions?: Array<{shotType: string}>;
 }
 
 const BattingAnalysis = () => {
@@ -26,18 +26,15 @@ const BattingAnalysis = () => {
 
   // Cleanup object URLs
   useEffect(() => {
-    // Revoke the previous URL if it exists
-    if (videoUrl) {
-      URL.revokeObjectURL(videoUrl);
-    }
-    
-    // Create new URL if a file is selected
-    if (selectedFile) {
-      const newUrl = URL.createObjectURL(selectedFile);
-      setVideoUrl(newUrl);
-      return () => URL.revokeObjectURL(newUrl);
-    }
-  }, [selectedFile]);
+  if (!selectedFile) return;
+
+  const newUrl = URL.createObjectURL(selectedFile);
+  setVideoUrl(newUrl);
+
+  return () => {
+    URL.revokeObjectURL(newUrl);
+  };
+}, [selectedFile]);
 
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -266,31 +263,12 @@ const BattingAnalysis = () => {
                           </div>
                           <span className="font-semibold text-foreground">{pred.shotType}</span>
                         </div>
-                        <div className="text-right">
-                          <span className="text-lg font-bold text-primary">{pred.confidence.toFixed(2)}%</span>
-                        </div>
                       </div>
                     ))}
                   </div>
                 </CardContent>
               </Card>
             )}
-
-            {/* Shots Detected */}
-            <Card className="backdrop-blur-glass bg-card/90 border-border/50">
-              <CardHeader>
-                <CardTitle>Shots Detected</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {analysisResult.shotsDetected.map((shot, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-sm">
-                      {shot}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
 
             {/* AI Recommendations */}
             <Card className="backdrop-blur-glass bg-card/90 border-border/50">
