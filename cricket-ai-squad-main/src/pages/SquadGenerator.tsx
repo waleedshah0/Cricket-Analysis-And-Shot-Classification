@@ -22,6 +22,17 @@ const SquadGenerator = () => {
   const [stadiums, setStadiums] = useState<Stadium[]>([]);
   const [isFetchingStadiums, setIsFetchingStadiums] = useState(true);
 
+
+  const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
+
   // Fetch stadiums from database on component mount
   useEffect(() => {
     const fetchStadiumData = async () => {
@@ -54,41 +65,59 @@ const SquadGenerator = () => {
     fetchStadiumData();
   }, []);
 
+  const [prevStadium, setPrevStadium] = useState<string | null>(null);
+  const [prevFormat, setPrevFormat] = useState<string | null>(null);
+
+
   const handleGenerateSquad = async () => {
-    if (!stadium || !format) return;
-    
-    setIsLoading(true);
-    try {
-      // Fetch players by format from the database
-      const players = await fetchPlayersByFormat(format);
-      
-      if (players.length === 0) {
-        toast({
-          title: "No Players Found",
-          description: `No players found for ${format} format in the database.`,
-          variant: "destructive",
-        });
-        setSquad([]);
-      } else {
-        // Set the fetched players as the squad
-        setSquad(players);
-        toast({
-          title: "Squad Generated!",
-          description: `Your ${format} squad with ${players.length} players is ready.`,
-        });
-      }
-    } catch (error) {
-      console.error('Failed to generate squad:', error);
+  if (!stadium || !format) return;
+
+  setIsLoading(true);
+  try {
+    const players = await fetchPlayersByFormat(format);
+
+    if (players.length === 0) {
       toast({
-        title: "Error",
-        description: "Failed to generate squad. Please try again.",
+        title: "No Players Found",
+        description: `No players found for ${format} format in the database.`,
         variant: "destructive",
       });
       setSquad([]);
-    } finally {
-      setIsLoading(false);
+    } else {
+      const isSameSelection =
+        prevStadium === stadium && prevFormat === format;
+
+      const finalSquad = isSameSelection
+        ? players // ❌ no shuffle
+        : shuffleArray(players); // ✅ shuffle only if changed
+
+      setSquad(finalSquad);
+
+      // update previous selections
+      setPrevStadium(stadium);
+      setPrevFormat(format);
+
+      toast({
+        title: "Squad Generated!",
+        description: isSameSelection
+          ? "Same selection detected. Squad order preserved."
+          : `Your ${format} squad with ${players.length} players is ready.`,
+      });
     }
-  };
+  } catch (error) {
+    console.error("Failed to generate squad:", error);
+    toast({
+      title: "Error",
+      description: "Failed to generate squad. Please try again.",
+      variant: "destructive",
+    });
+    setSquad([]);
+  } finally {
+    setIsLoading(false);
+  }
+};
+
+
 
   const handleShareSquad = () => {
     toast({
